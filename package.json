@@ -1,0 +1,28 @@
+{
+  "name": "MarsSpaceLines",
+  "version": "0.1.0",
+  "description": "Webs con un posible camino para un Front-End",
+  "authors": [
+    "Francisco Durán"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.shinfduran.com/",
+  "scripts": {
+    "init": "npm install"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-bootlint": "^0.7.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
+  },
+  "dependencies": {}
+}

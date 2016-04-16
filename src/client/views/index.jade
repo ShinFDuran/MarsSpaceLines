@@ -1,0 +1,71 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    title Mars Space Lines
+
+    block metas
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='description', content=description)
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block css
+      link(rel='stylesheet', href='/css/styles.css')
+
+    block js-header
+  body
+
+    // ******************************** Navegador ****************
+    block navegador
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          // Menú comprimido
+          .navbar-header.page-scroll
+            button(type="button", class="navbar-toggle", data-toggle="collapse", data-target="#menu")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="index.html") Front-End Roadmap
+
+          // Menú desplegado
+          .collapse.navbar-collapse#menu
+            ul.nav.navbar-nav.navbar-right
+              li.hidden
+                a(href="#")
+              li.page-scroll
+                a(href="index.html") Inicio
+              li.page-scroll
+                a(href="roadmap.html") Roadmap
+              li.page-scroll
+                a(href="contacto.html") Contacto
+              li.page-scroll
+                a(href="otros.html") Otros Roadmaps
+
+    // ******************************** Contenido principal ****************
+    block contenido
+      header.jumbotron
+        .container
+          h1 Front-End Roadmap
+          p Página principal
+      section.container
+        p En FrontEnd Roadmap como su nombre indica mi objetivo es realizar un recorrido de los diferentes campos o tecnologías que hay que recorrer para llegar a ser un desarrollador Front-End. Esta web y su contenido no es algo cómodo para mi, en el sentido de lo normal es que lo realizara una persona que ya llevase tiempo trabajando de ello, sin embargo, trabajar como desarrollador web no significa ser competente en ello y es seguro que hay bastantes "aficionados" que podrían realizar mejores trabajos que los que ya cobran.
+        p Esta web la hago principalmente para mi, para dejarme bien claro los pasos que tengo que dar para conseguir mis objetivos a la vez que realizo una nueva web. Pero ya puestos, intentaré esforzarme para que además sirva de referencia a otras personas que al igual que yo quieren dedicarse al desarrollo web y más en concreto al Front-end.
+        .media-left
+          .media
+
+    // ******************************** Footer ****************
+    block footer
+
+
+    // ******************************** Scripts final html ****************
+    block js-footer
+      script(src="//code.jquery.com/jquery-2.1.1.min.js")
+      script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+
+    //-script(src="js/main.js")
+    //-script(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
