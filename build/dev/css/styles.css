@@ -7760,6 +7760,18 @@ button.close {
   font-size: 24px;
 }
 
+.marte {
+  background-color: #bfbfbf;
+}
+
+.viaje {
+  background-color: #d9d9d9;
+}
+
+.contacto {
+  background-color: #cccccc;
+}
+
 .img-header, .img-marte, .img-viaje, .img-contacto {
   min-height: 300px;
   background-size: cover;
