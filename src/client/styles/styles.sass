@@ -7,10 +7,8 @@ $image-header: mars-planet
 $image-marte: paisaje-marte
 $image-viaje: mars_landscape
 $image-contacto: contacto
-$altura-min: 300px
-$altura-min-lg: 400px
-
-
+$altura-min: 250px
+$altura-min-lg: 350px
 
 .navbar-inverse
   background-color: rgba(34, 34, 34, 0.90)
@@ -23,6 +21,21 @@ $altura-min-lg: 400px
     font-size: 48px
   h2
     font-size: 24px
+
+.caption-ship
+  margin-bottom: 5px
+  figure
+    display: block
+    overflow: hidden
+    position: relative
+  figcaption
+    background: rgba(0,0,0,0.75)
+    bottom: 0
+    color: white
+    font-style: italic
+    padding: 5px 10px
+    position: absolute
+    width: 100%
 
 .marte
   background-color: lighten(black, 75%)
@@ -42,7 +55,7 @@ $altura-min-lg: 400px
   @extend %img-fondo
   padding-top: 40px
   background:
-    color: orange
+    color: black
     image: url(/images/#{$image-header}-small.jpg)
 
 .img-marte

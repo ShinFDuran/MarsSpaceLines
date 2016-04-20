@@ -7760,6 +7760,26 @@ button.close {
   font-size: 24px;
 }
 
+.caption-ship {
+  margin-bottom: 5px;
+}
+
+.caption-ship figure {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.caption-ship figcaption {
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  color: white;
+  font-style: italic;
+  padding: 5px 10px;
+  position: absolute;
+  width: 100%;
+}
+
 .marte {
   background-color: #bfbfbf;
 }
@@ -7773,14 +7793,14 @@ button.close {
 }
 
 .img-header, .img-marte, .img-viaje, .img-contacto {
-  min-height: 300px;
+  min-height: 250px;
   background-size: cover;
   background-position: center;
 }
 
 .img-header {
   padding-top: 40px;
-  background-color: orange;
+  background-color: black;
   background-image: url(/images/mars-planet-small.jpg);
 }
 
@@ -7813,19 +7833,19 @@ button.close {
 
 @media screen and (min-width: 992px) {
   .img-header {
-    min-height: 400px;
+    min-height: 350px;
     background-image: url(/images/mars-planet-large.jpg);
   }
   .img-marte {
-    min-height: 400px;
+    min-height: 350px;
     background-image: url(/images/paisaje-marte-large.jpg);
   }
   .img-viaje {
-    min-height: 400px;
+    min-height: 350px;
     background-image: url(/images/mars_landscape-large.jpg);
   }
   .img-contacto {
-    min-height: 400px;
+    min-height: 350px;
     background-image: url(/images/contacto-large.jpg);
   }
 }
