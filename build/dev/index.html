@@ -8,25 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <script src="//cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
   </head>
-  <body>
+  <body id="inicio" data-spy="scroll" data-target="#menu-links">
     <!-- ******************************** Navegador ****************-->
     <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <!-- *** Menú comprimido.  Sólo muestra la marca y un botón que revelará el menú inferior-->
         <div class="navbar-header page-scroll">
           <button type="button" data-toggle="collapse" data-target="#menu-links" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          <!-- Título de la web o nombre/imagen de la marca--><a href="#" class="navbar-brand">Mars Spacelines</a>
+          <!-- Título de la web o nombre/imagen de la marca--><a href="#inicio" class="navbar-brand">Mars Spacelines</a>
         </div>
         <!-- *** Menú desplegado-->
         <div id="menu-links" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <!-- La sección activa se aplica al li-->
             <li class="hidden"><a href="#"></a></li>
-            <li class="active"><a href="#">Inicio</a></li>
-            <li><a href="#">Marte</a></li>
-            <li><a href="#">El viaje</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#marte">Marte</a></li>
+            <li><a href="#viaje">El viaje</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -98,5 +99,6 @@
     <!-- ******************************** Scripts final html ****************-->
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

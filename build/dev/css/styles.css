@@ -7739,6 +7739,10 @@ button.close {
   }
 }
 
+body {
+  position: relative;
+}
+
 .navbar-inverse {
   background-color: rgba(34, 34, 34, 0.9);
 }

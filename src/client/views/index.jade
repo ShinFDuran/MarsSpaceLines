@@ -14,7 +14,8 @@ html(lang='es')
       link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,700')
 
     block js-head
-  body
+      script(src="//cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js", async)
+  body#inicio(data-spy="scroll", data-target="#menu-links")
 
     // ******************************** Navegador ****************
     block navegador
@@ -28,7 +29,7 @@ html(lang='es')
               span.icon-bar
               span.icon-bar
             // Título de la web o nombre/imagen de la marca
-            a.navbar-brand(href="#") Mars Spacelines
+            a.navbar-brand(href="#inicio") Mars Spacelines
 
           // *** Menú desplegado
           .collapse.navbar-collapse#menu-links
@@ -36,14 +37,14 @@ html(lang='es')
               // La sección activa se aplica al li
               li.hidden
                 a(href="#")
-              li.active
-                a(href="#") Inicio
               li
-                a(href="#") Marte
+                a(href="#inicio") Inicio
               li
-                a(href="#") El viaje
+                a(href="#marte") Marte
               li
-                a(href="#") Contacto
+                a(href="#viaje") El viaje
+              li
+                a(href="#contacto") Contacto
 
     // ******************************** Contenido principal ****************
     block contenido
@@ -102,5 +103,4 @@ html(lang='es')
     block js-footer
       script(src="//code.jquery.com/jquery-2.1.1.min.js")
       script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
-
-    //-script(src="js/main.js")
+      script(src="js/main.js")
