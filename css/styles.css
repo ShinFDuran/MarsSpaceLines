@@ -7805,51 +7805,51 @@ body {
 .img-header {
   padding-top: 40px;
   background-color: black;
-  background-image: url(/images/mars-planet-small.jpg);
+  background-image: url(images/mars-planet-small.jpg);
 }
 
 .img-marte {
-  background-image: url(/images/paisaje-marte-small.jpg);
+  background-image: url(images/paisaje-marte-small.jpg);
 }
 
 .img-viaje {
-  background-image: url(/images/mars_landscape-small.jpg);
+  background-image: url(images/mars_landscape-small.jpg);
 }
 
 .img-contacto {
-  background-image: url(/images/contacto-small.jpg);
+  background-image: url(images/contacto-small.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .img-header {
-    background-image: url(/images/mars-planet-mid.jpg);
+    background-image: url(images/mars-planet-mid.jpg);
   }
   .img-marte {
-    background-image: url(/images/paisaje-marte-mid.jpg);
+    background-image: url(images/paisaje-marte-mid.jpg);
   }
   .img-viaje {
-    background-image: url(/images/mars_landscape-mid.jpg);
+    background-image: url(images/mars_landscape-mid.jpg);
   }
   .img-contacto {
-    background-image: url(/images/contacto-mid.jpg);
+    background-image: url(images/contacto-mid.jpg);
   }
 }
 
 @media screen and (min-width: 992px) {
   .img-header {
     min-height: 350px;
-    background-image: url(/images/mars-planet-large.jpg);
+    background-image: url(images/mars-planet-large.jpg);
   }
   .img-marte {
     min-height: 350px;
-    background-image: url(/images/paisaje-marte-large.jpg);
+    background-image: url(images/paisaje-marte-large.jpg);
   }
   .img-viaje {
     min-height: 350px;
-    background-image: url(/images/mars_landscape-large.jpg);
+    background-image: url(images/mars_landscape-large.jpg);
   }
   .img-contacto {
     min-height: 350px;
-    background-image: url(/images/contacto-large.jpg);
+    background-image: url(images/contacto-large.jpg);
   }
 }
