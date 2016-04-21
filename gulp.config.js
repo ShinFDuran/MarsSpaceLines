@@ -9,6 +9,11 @@ module.exports = function(){
       src_server + '*.js'
     ],
 
+    /*** Configuración de JavaScript ***/
+    js: {
+      src: src_server + '/js/*.js'
+    },
+
     /*** Configuración de jade ***/
     jade: {
       src: [

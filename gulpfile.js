@@ -26,6 +26,9 @@ gulp.task('bootlint', ['jade'], tasks.bootlint);
 // Tarea: Generar CSS a partir de archivos Sass
 gulp.task('sass', tasks.sass);
 
+// Tarea: Copiar JS
+gulp.task('js', tasks.js);
+
 // Tarea: Generar servidor de desarrollo
 gulp.task('server-dev', tasks.server_dev);
 
@@ -35,3 +38,5 @@ gulp.task('browser', ['jade', 'sass'], tasks.browser_sync);
 // Tareas que recargan BrowserSync
 gulp.task('jade-watch', ['jade'], reload);
 gulp.task('sass-watch', ['sass'], reload);
+gulp.task('js-watch', ['js'], reload);
+

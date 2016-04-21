@@ -44,63 +44,6 @@ $altura-min-lg: 350px
 .contacto
   background-color: lighten(black, 80%)
 
+
 // Imágenes de fondo entre secciones
-%img-fondo
-  min-height: $altura-min
-  background:
-    size: cover
-    position: center
-
-.img-header
-  @extend %img-fondo
-  padding-top: 40px
-  background:
-    color: black
-    image: url(/images/#{$image-header}-small.jpg)
-
-.img-marte
-  @extend %img-fondo
-  background:
-    image: url(/images/#{$image-marte}-small.jpg)
-
-.img-viaje
-  @extend %img-fondo
-  background:
-    image: url(/images/#{$image-viaje}-small.jpg)
-
-.img-contacto
-  @extend %img-fondo
-  background:
-    image: url(/images/#{$image-contacto}-small.jpg)
-
-@media screen and (min-width: 768px)
-  .img-header
-    background:
-      image: url(/images/#{$image-header}-mid.jpg)
-  .img-marte
-    background:
-      image: url(/images/#{$image-marte}-mid.jpg)
-  .img-viaje
-    background:
-      image: url(/images/#{$image-viaje}-mid.jpg)
-  .img-contacto
-    background:
-      image: url(/images/#{$image-contacto}-mid.jpg)
-
-@media screen and (min-width: 992px)
-  .img-header
-    min-height: $altura-min-lg
-    background:
-      image: url(/images/#{$image-header}-large.jpg)
-  .img-marte
-    min-height: $altura-min-lg
-    background:
-      image: url(/images/#{$image-marte}-large.jpg)
-  .img-viaje
-    min-height: $altura-min-lg
-    background:
-      image: url(/images/#{$image-viaje}-large.jpg)
-  .img-contacto
-    min-height: $altura-min-lg
-    background:
-      image: url(/images/#{$image-contacto}-large.jpg)
+@import "img-fondo"

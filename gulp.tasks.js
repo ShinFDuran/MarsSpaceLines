@@ -77,6 +77,15 @@ exports.sass = function(){
     .pipe(gulp.dest('./build/dev/css/'));
 };
 
+// Tarea: Copiar JS
+exports.js = function(){
+  _.log('Copia de archivos JavaScript');
+
+  gulp.src(config.js.src)
+    .pipe(gulp.dest('./build/dev/js/'));
+};
+
+
 // Tarea: Servidor desarrollo con  nodemon para reinicarse y BrowserSync
 exports.server_dev = function(){
   _.log('Servidor de desarrollo');
@@ -101,4 +110,5 @@ exports.browser_sync = function () {
   browserSync(config.browserSync);
   gulp.watch(config.jade.src, ['jade-watch']);
   gulp.watch(config.sass.watch_src, ['sass-watch']);
+  gulp.watch(config.js.src, ['js-watch']);
 };
