@@ -33,7 +33,7 @@ gulp.task('js', tasks.js);
 gulp.task('server-dev', tasks.server_dev);
 
 // Tarea: BrowserSync
-gulp.task('browser', ['jade', 'sass'], tasks.browser_sync);
+gulp.task('browser', ['jade', 'sass', 'js'], tasks.browser_sync);
 
 // Tareas que recargan BrowserSync
 gulp.task('jade-watch', ['jade'], reload);
